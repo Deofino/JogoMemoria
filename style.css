@@ -84,7 +84,7 @@ span{
 }
 @media (max-width: 600px){
    main > .card{
-        height: 100px;
+        height: 80px;
         min-width: 120px;
     }
     main{

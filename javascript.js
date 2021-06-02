@@ -70,10 +70,8 @@ datas.forEach((el,i)=>{
 
 function resetar(arr){
     try {
-        // console.log(arr[0]);
         arr[0].style.opacity = 0;
         arr[1].style.opacity = 0;
-        console.log(arr[0].parentElement.style.order, arr[1].parentElement.style.order);
         if(arr[0].alt === arr[1].alt && arr[0].parentElement.style.order != arr[1].parentElement.style.order ){
             arr[0].parentElement.remove();
             arr[1].parentElement.remove();
