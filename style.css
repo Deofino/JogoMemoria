@@ -54,7 +54,7 @@ main{
     align-items: center;
     flex-wrap: wrap;
 }
-main > .card{
+main >.card{
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.multarte.com.br%2Fwp-content%2Fuploads%2F2019%2F02%2Ffundo-quadriculado-azul3.jpg%3Ffit%3D696%252C752%26ssl%3D1&f=1&nofb=1');
     background-size: 150%;
     margin: 5px;
@@ -83,10 +83,12 @@ span{
     font-weight: bold;
 }
 @media (max-width: 600px){
-   .card{
-    height: 120px !important;
-   }
-   main{
+   main > .card{
+        height: 100px;
+        min-width: 120px;
+    }
+    main{
+        margin: 0 1px;
         padding: 5px;
     }
     body > div{

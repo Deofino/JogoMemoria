@@ -80,7 +80,6 @@ function resetar(arr){
             let fala = arr[0].alt.split(':');
             alert("Nutriente: "+fala[0]+"\nAlimento: "+fala[1]);
             let tam = document.querySelectorAll('.card');
-            console.log(tam.length);
             if(tam.length == 0){
                 alert('Você Venceu, parabéns!!!!');
                 if(confirm('Deseja recomeçar?')){
