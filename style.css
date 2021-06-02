@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 1s ease;
+    border-radius: 4px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c49bfa;
+    font-family: monospace;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7f%2F29%2F44%2F7f2944014a694d1313f6844a52865d8e.jpg&f=1&nofb=1');
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-size: max(3em, 2.5vw);
+    margin: 1.5rem 0;
+}
+body > div{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5rem 0;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #222 ;
+    overflow: auto;
+    background-image: linear-gradient(to right,#782890, #664195,#a25bff);
+    border: 2px solid #222;
+    display: flex;
+    margin: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main > .card{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.multarte.com.br%2Fwp-content%2Fuploads%2F2019%2F02%2Ffundo-quadriculado-azul3.jpg%3Ffit%3D696%252C752%26ssl%3D1&f=1&nofb=1');
+    background-size: 150%;
+    margin: 5px;
+    border-radius: 4px;
+    transition: 1s all ease;
+    padding: 2px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(170, 170, 170, 0.863);
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(5, 5, 5);
+    position: relative;
+    height: 150px;
+    min-width: 200px;
+    max-width: 250px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+span{
+    color: white;
+    font-size:3rem;
+    text-shadow: 0 0 10px black;
+    font-family: monospace;
+    font-weight: bold;
+}
+@media (max-width: 600px){
+   .card{
+    height: 120px !important;
+   }
+   main{
+        padding: 5px;
+    }
+    body > div{
+        padding: 100px 0;
+    }
+    body{
+        height: 200vh;
+    }
+}
